@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Contact Me</title>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+  rel="stylesheet"
+/>
+<!-- <link rel="stylesheet" href="../styles.css" />
+ -->
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="https://github.com/patteso1849/Capstone/">About</a></li>
+      <li><a href="https://www.linkedin.com/in/rc-patterson-a52626164/
+        ">Contact</a></li>      
+    </ul>
+  </nav>
+
+  <figure>
+    <img
+    src="https://picsum.photos/2200/750.jpg"
+    src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/12744436_10101865972433457_4624308597702673947_n.jpg?_nc_cat=107&_nc_oc=AQl3qTS_ZAyp3EtDnPXENqChQqbxcWduh2XvTVShysnftZ8J_MzrthbaV83_Js_wIJI&_nc_ht=scontent-ort2-1.xx&oh=fb5998d88e7cf826fe8e325304819848&oe=5E2DEE05"
+    <figcaption>Welcome to St. Louis </figcaption>
+  </figure>
+
+<h2>Open Mic's in St. Louis City</h2>
+<h3>Search by typing</h3>
+<h4>
+    <li>Music</li>
+    <li>Comedy</li>
+    <li>Poetry (Spoken Word)</li>
+    <li>Day of the Week</li>
+    <li>Day(Sunday, Monday, Tuesday, Wednesday, Thursday, Friday or Saturday)-(music, comedy or poetry)</li>
+</h4>
+<h4>    
+    <li> For example typing "monday-poetry" will result in "Venice Cafe"</li>
+    <li> You can also search by day</li>
+</h4>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Open Mics.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="http://www.thevenicecafe.com/">Venice Cafe<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Monday, night</p>
+  <li><a href="https://www.theheavyanchor.com/">Heavy Anchor<p hidden>this be hidden. Comedy, Monday, night</p>
+  <li><a href="http://www.thevenicecafe.com/">Venice Cafe<p hidden>this be hidden. Monday Comedy, monday-poetry, monday-comedy, monday-music, Comedy, Music and Poetry (Spoken Word), Monday, night</p>
+    <li><a href="https://www.facebook.com/Chippewa-Chapel-Open-Mic-134953906537899/">The Livery (Chippewa Chapel Open Mic)<p hidden>this be hidden. Thursday-Comedy, Thursday-Poetry, Thursday-Music, Comedy, Music and Poetry (Spoken Word), Thursday, night</p>
+    <li><a href="https://www.theheavyanchor.com/">Heavy Anchor<p hidden>this be hidden. monday-comedy, Comedy, Monday, night</p>
+    <li><a href="https://www.facebook.com/PoeticJusticeOpenMic/">Poetic Justice <p hidden>Poetry (Spoken Word), Last, Sunday, Last Sunday</p>
+  <li><a href="https://www.facebook.com/LyricalandTherapy/">Lyrical Therapy<p hidden>this be hidden. Music, Poetry (Spoken Word), Monday, night</p>
+  <li><a href="https://1860saloon.com/event/open-mic-night-hosted-by-tim-perry-9-to-1-a-m/2019-08-27/">1860's Saloon STL<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Tuesday, night</p>
+     <li><a href="https://thewolfstl.com/calendar/?mc_id=4579">The Wolf<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Tuesday, night</p>
+  <li><a href="https://www.openmicstlouis.com/MoreInfo/NTYxNyMjIyNURVhU">Alpha Brewery<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Wednesday, night</p>
+  <li><a href="https://www.facebook.com/JoaniesPizzeriaSoulard/posts/its-thursday-night-time-for-open-mic-night-come-see-see-nick-behind-the-bar-star/10150671740302665/">Joanie's Pizzeria<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Thursday, night</p>
+  <li><a href="http://hartfordcoffee.com/events/open-mic-night-1">Hartford Coffee Co<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Friday, night</p>
+  <li><a href="https://1860saloon.com/event/open-mic-night-hosted-by-tim-perry-9-to-1-a-m/2019-08-27/">1860's Saloon STL<p hidden>this be hidden. Tuesday-Comedy, Tuesday-Music, Tuesday-Poetry, Comedy, Music and Poetry (Spoken Word), Tuesday, night</p>
+     <li><a href="https://thewolfstl.com/calendar/?mc_id=4579">The Wolf<p hidden>this be hidden. Comedy, Music and Poetry, Tuesday-Comedy, Tuesday-Music, Tuesday-Poetry (Spoken Word), Tuesday, night</p>
+  <li><a href="https://www.openmicstlouis.com/MoreInfo/NTYxNyMjIyNURVhU">Alpha Brewery<p hidden>this be hidden. Wednesday-Music, Comedy, Music and Poetry (Spoken Word), Wednesday, night</p>
+  <li><a href="https://www.facebook.com/JoaniesPizzeriaSoulard/posts/its-thursday-night-time-for-open-mic-night-come-see-see-nick-behind-the-bar-star/10150671740302665/">Joanie's Pizzeria<p hidden>this be hidden. Thursday-Comedy, Thursday-Poetry, Thursday-Music, Comedy, Music and Poetry (Spoken Word), Thursday, night</p>
+  <li><a href="http://hartfordcoffee.com/events/open-mic-night-1">Hartford Coffee Co<p hidden>this be hidden. Friday-Comedy, Friday-Poetry, Friday-Music, Comedy, Music and Poetry (Spoken Word), Friday, night</p>
+  </ul>
+
+  <script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+<ul>
+    <li>
+        <li><a href="https://www.openmicstlouis.com/">Go to https://www.openmicstlouis.com/ for more information on OpenMics in St. Louis</p>
+    </li>
+  </ul>
+<footer>
+  <address>
+    <ul>
+      <li>
+        <a href="https://github.com/patteso1849" target="_blank">
+          <span class="fab fa-github-square"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/rc-patterson-a52626164/" target="_blank">
+          <span class="fab fa-linkedin"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com/" target="_blank">
+          <span class="fab fa-twitter"></span>
+        </a>
+      </li>
+    </ul>
+  </address>
+</footer>
+</body>
+</html>
